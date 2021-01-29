@@ -1,0 +1,169 @@
+:root{
+    --primary-color: #e50914;
+    --dark-color:#141414;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    --webkit-font-smoothing: antialiased;
+    background-color: black;
+    color: rgb(240, 242, 243);
+}
+
+ul{
+    list-style: none;
+}
+h1, h2, h3, h4 {
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    margin: 0.5rem 0; /* 16/2 = 8 px */
+}
+
+img{
+    width: 100%;
+}
+.showcase{
+    width: 100%;
+    height: 93vh; /*100 vh takes all tthe sceen space, 93 vh leaves a small bar in hte bottom */
+    position: relative; /*it fixes position for future divs which will be ablsolute in comparison to this relative showcase */
+    background: url('../img/Large\ background.jpg') no-repeat center center/cover;
+}
+/*for black overlay */ 
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    background:rgba(0, 0, 0, 0.6);
+    box-shadow: inset 60px 60px 100px #000000, inset -60px -60px 100px #000000; /*left, top, intensity??, color, then same but other sides*/
+}
+
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+    
+}
+.showcase-top img{
+    width: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*compensating for 50% 50% absolute position and centering it correctly */
+}
+
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%); 
+
+}
+.showcase-content{
+    position: relative;
+    margin: auto;
+    display: flex; /* I need to invest more time in these flex thingies */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /*how come its changing the lenght of the button? */
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 2;
+}
+
+.showcase-content h1{
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+}
+
+
+.showcase-content p{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 1.9rem;
+    margin: 0 0 2rem;
+}
+
+/* Tabs*/
+.tabs{
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons */
+.btn {
+    display: inline;
+    background: var(--primary-color); /*not too clear with this var and --primary color */
+    color: #fff; /* video always uses #fff instead of 'white, any benefits? */
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0,0,0, 0.45); /* if i understand correlcty 0 0 0 stand for black and last digit, called alpha stand for transparency level from 0 to 1*/
+    border-radius: 2px;
+}
+.btn:hover{
+    opacity: 0.9; /*not necessary as not in og page but ok to know */
+}
+
+.btn-rounded{
+    border-radius: 5px;
+}
+
+.btn-xl{
+    font-size:2rem; /* aka 2*16 = 32 px */
+    padding: 1.5rem 2.1rem;
+    background-color:#e50914;
+    text-transform: uppercase;
+    border-radius: 10px;
+    
+}
+
+.btn-lg{
+    font-size:1rem;
+    padding: 0.8rem 1.3rem;
+    background-color:#e50914;
+    text-transform: uppercase;
+}

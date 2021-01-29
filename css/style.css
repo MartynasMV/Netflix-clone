@@ -39,7 +39,7 @@ img{
     position: relative; /*it fixes position for future divs which will be ablsolute in comparison to this relative showcase */
     background: url('../img/Large\ background.jpg') no-repeat center center/cover;
 }
-/*for black overlay  */ 
+/*for black overlay */ 
 .showcase::after{
     content: '';
     position: absolute;

@@ -121,12 +121,6 @@ img{
 
 
 
-
-
-/*test*/
-
-
-
 .tabs p{
     font-size: 1.2rem;
     padding-top: 0.5rem;
@@ -215,8 +209,28 @@ img{
     background-color:#222;
 }
 
-/**/
-
+/*Footer*/
+.footer{
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+.footer, .footer a{
+    color: #999;
+    font-size: 0.9rem;
+}
+.footer p{
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+.footer .footer-cols { 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+.footer-cols li{
+    line-height: 1.9;
+}
 
 /*Container*/
 .container{
@@ -260,11 +274,11 @@ img{
     cursor: pointer;
     margin-right: 0.5rem;
     outline: none;
-    box-shadow: 0 1px 0 rgba(0,0,0, 0.45); /* if i understand correlcty 0 0 0 stand for black and last digit, called alpha stand for transparency level from 0 to 1*/
+    box-shadow: 0 1px 0 rgba(0,0,0, 0.45); /* fmi if i understand correlcty 0 0 0 stand for black and last digit, called alpha stand for transparency level from 0 to 1*/
     border-radius: 2px;
 }
 .btn:hover{
-    opacity: 0.9; /*not necessary as not in og page but ok to know */
+    opacity: 0.9; /* fmi not necessary as not in og page but ok to know */
 }
 
 .btn-rounded{
@@ -287,4 +301,55 @@ img{
     text-transform: uppercase;
 }
 
+
+
+/*Media queries for responsivness.
+steps: 960px and less 700 and less*/
+
+@media(max-width: 960px){
+    .showcase{
+        height: 70vh;
+    }
+    .hide-sm {
+        display: none;
+    }
+    .showcase-top img{
+        top: 30%;
+        left: 5%;
+        transform: translate(0)
+    }
+    .showcase-content h1{
+        font-size: 3.7rem;
+        line-height: 1rem;
+    }
+    .showcase-content p{
+        font-size: 1.3rem;
+        
+    }
+    .showcase-content .btn{
+        font-size: 1.2rem;
+        padding: 1.4rem 2rem;
+    }
+
+
+    .footer .footer-cols { 
+        grid-template-columns: repeat(2,1fr);
+    }
+    .text-xl{
+        font-size: 1.5rem;
+    }
+    .text-lg{
+        font-size: 1.3rem;
+    }
+    .text-md{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:700px){
+    #tab-1-content .tab-1-content-inner, #tab-2-content .tab-2-content-top, #tab-2-content .tab-2-content-bottom, #tab-3-content .tab-3-content-top{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
 

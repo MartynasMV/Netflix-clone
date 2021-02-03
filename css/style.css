@@ -357,7 +357,7 @@ steps: 960px and less 700 and less*/
     }
 }
 
-@media(max-width:700px){
+@media(max-width:1000px){
     #tab-1-content .tab-1-content-inner,
     #tab-2-content .tab-2-content-top,
     #tab-2-content .tab-2-content-bottom,
@@ -372,6 +372,11 @@ steps: 960px and less 700 and less*/
     .tab-content .container {
         max-width: 100%;
         margin: 0;
+    }
+    .tab-content p{
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
     .table {
         font-size: 1rem;
     }
@@ -430,4 +435,5 @@ steps: 960px and less 700 and less*/
         overflow-y:scroll;
         display:block;
     }
+
 }

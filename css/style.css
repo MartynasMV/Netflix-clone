@@ -370,8 +370,15 @@ steps: 960px and less 700 and less*/
     box-shadow: inset 30px 30px 100px #000000, inset -30px -30px 100px #000000;
     }
 }
-
+/*following part is made totally by myself, hence its not as beautiful and has some potential imperfections :) */
 @media(max-width:470px){
+    .showcase {
+        height: 100vh;
+    }
+    .tabs .fas{
+        font-size: 2rem;
+    }
+
     .showcase-top a {
         font-size: 0.7rem;
     }
@@ -395,5 +402,15 @@ steps: 960px and less 700 and less*/
     .tab-content-item a{
         font-size: 0.7rem;
         line-height: 1rem;
+    }
+    #tab-1-content .text-lg{
+        padding-bottom: 1rem;
+    }
+    .footer p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .footer .footer-cols {
+        padding-left: 2rem; /*trying to center the text because visually it looks that its not in the center*/
     }
 }

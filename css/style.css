@@ -371,3 +371,29 @@ steps: 960px and less 700 and less*/
     }
 }
 
+@media(max-width:470px){
+    .showcase-top a {
+        font-size: 0.7rem;
+    }
+    .showcase-top img{
+        width: 110px;
+    }
+    .showcase-content h1{
+        font-size: 2rem;
+        line-height: 1rem;
+    }
+    .showcase-content p{
+        font-size: 1rem;
+    }
+    .showcase-content .btn{
+        font-size: 1rem;
+        padding: 1.4rem 2rem;
+    }
+    .tab-content-item p{
+        font-size: 1rem;
+    }
+    .tab-content-item a{
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+}

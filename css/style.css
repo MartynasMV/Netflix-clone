@@ -413,4 +413,10 @@ steps: 960px and less 700 and less*/
     .footer .footer-cols {
         padding-left: 2rem; /*trying to center the text because visually it looks that its not in the center*/
     }
+    .table {
+        overflow-y:scroll;
+        overflow-x:scroll;
+        overflow:scroll;
+
+    }
 }

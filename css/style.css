@@ -369,14 +369,17 @@ steps: 960px and less 700 and less*/
         background:rgba(0, 0, 0, 0.6);
     box-shadow: inset 30px 30px 100px #000000, inset -30px -30px 100px #000000;
     }
+    .tab-content .container {
+        max-width: 100%;
+        margin: 0;
+    .table {
+        font-size: 1rem;
+    }
 }
 /*following part is made totally by myself, hence its not as beautiful and has some potential imperfections :) */
 @media(max-width:470px){
     .showcase {
         height: 100vh;
-    }
-    .tabs .fas{
-        font-size: 2rem;
     }
 
     .showcase-top a {
@@ -418,7 +421,7 @@ steps: 960px and less 700 and less*/
         margin: 0;
     }
     .table {
-        font-size: 1rem;
+        font-size: 0.9rem;
         width: 100%;
         overflow-y:scroll;
         display:block;

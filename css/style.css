@@ -416,12 +416,16 @@ steps: 960px and less 700 and less*/
     .footer .footer-cols {
         padding-left: 2rem; /*trying to center the text because visually it looks that its not in the center*/
     }
+    .tabs .container{
+        margin: 0;
+        max-width: 100%;
+    }
     .tab-content .container {
         max-width: 100%;
         margin: 0;
     }
     .table {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         width: 100%;
         overflow-y:scroll;
         display:block;
